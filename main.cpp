@@ -14,6 +14,7 @@ int main(int argc, char **argv) {
 		FILE* fp2 = fopen(argv[2], "rb");
 		if (fp1 == NULL || fp2 == NULL) {
 			printf("file open error"); //2
+			return -1;
 		} else {
 			fread(&n1, sizeof(n1), 1, fp1);
 			fread(&n2, sizeof(n2), 1, fp2);
