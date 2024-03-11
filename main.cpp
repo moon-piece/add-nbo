@@ -7,7 +7,7 @@ int main(int argc, char **argv) {
 	uint32_t n1;
 	uint32_t n2;
 	if (argc != 3) {
-		printf("file size error\nPlease input : ./add-nbo <file> <file2>"); //1
+		printf("command error\nPlease input : ./add-nbo <file> <file2>"); //1
 		return -1;
 	} else {
 		FILE* fp1 = fopen(argv[1], "rb");
